@@ -4,5 +4,7 @@
   "azureFunctions.projectLanguage": "TypeScript",
   "azureFunctions.projectRuntime": "~3",
   "debug.internalConsoleOptions": "neverOpen",
-  "azureFunctions.preDeployTask": "npm prune"
+  "azureFunctions.preDeployTask": "npm prune",
+  "appService.defaultWebAppToDeploy": "/subscriptions/7413cf32-781e-47ca-8cb7-e4d30cc2f7cf/resourceGroups/VanessaLearnsML/providers/Microsoft.Web/sites/VanessaWebApp",
+  "appService.deploySubpath": "."
 }
