@@ -9,11 +9,22 @@ description: 'Apps that can be used with as a starting point for some MS Learn M
 urlFragment: 'https://github.com/MicrosoftDocs/mslearn-staticwebapp'
 ---
 
-# Official Microsoft Sample
+# AI Playground Web App
 
-Follow the hands-on tutorial to [publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Web Apps](https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api/?WT.mc_id=mslearn_staticwebapp-github-jopapa).
+Join us at [AI Show Live: AI Playground]() edition on every other Friday to build AI Playground Web App. We will implement [Azure Cognitive Services](https://docs.microsoft.com/azure/cognitive-services/what-are-cognitive-services?WT.mc_id=aiml-8567-ayyonet) into one app where anyone can try out and discover different Azure's easy to use AI, Cognitive Services. 
+
+- Code with us and get yourself some [Free Azure Credit](https://aka.ms/CognitiveServicesFree)
+- Check out more resources and other cool demos at [aka.ms/DevRel/CognitiveServices](https://www.microsoft.com/en-us/devrel/cognitiveservices/?WT.mc_id=aiml-8567-ayyonet)
+- Catch the previous episodes on [YouTube Playlist](https://www.youtube.com/playlist?list=PLlrxD0HtieHinivDFATQd5qyjL6ijKHUF). 
+- Join the community on [Reddit](https://www.reddit.com/r/Azure_AI_Cognitive/)
+- Submit a Github issue to let us know what you want to see build. 
+- Say Hi on Twitter [Ayşegül](https://twitter.com/AysSomething) & [Vanessa](https://twitter.com/vaness_diaz)
+
+[![AI Show Live](http://img.youtube.com/vi/41TWuFLDUVQ/0.jpg)](https://youtu.be/41TWuFLDUVQ)
 
 ## Static Web App
+
+This repo is created from a [Static Web Apps](https://docs.microsoft.com/azure/static-web-apps/?WT.mc_id=aiml-8567-ayyonet) sample. Follow the hands-on tutorial to [publish an Angular, React, Svelte, or Vue JavaScript app and API with Azure Static Web Apps](https://docs.microsoft.com/learn/modules/publish-app-service-static-web-app-api/?WT.mc_id=mslearn_staticwebapp-github-jopapa&WT.mc_id=aiml-8567-ayyonet).
 
 This repository contains apps that can be used with as a starting point for some MS Learn Modules. Because everyone has their own preference for their JavaScript frameworks/library, you can choose which one you prefer.
 
