@@ -32,9 +32,12 @@ The shopping theme is used throughout the app.
 
 ## Pre-Reqs
 
-- Familiarity with one of Angular, React, Svelte, or Vue
-- [Node.js LTS and Git](https://nodejs.org/)
 - [GitHub](https://github.com) account
+- Familiarity with one of Angular, React, Svelte, or Vue
+&
+- [Sign up for CodeSpaces Beta](https://github.com/features/codespaces?WT.mc_id=aiml-8567-ayyonet)
+OR
+- [Node.js LTS and Git](https://nodejs.org/)
 - [Visual Studio Code](https://code.visualstudio.com?WT.mc_id=aiml-8567-ayyonet)
 
 ## Contents
@@ -49,9 +52,18 @@ The apps written in the following JavaScript frameworks/libraries:
 | **svelte-app**  | [Sample Svelte app](https://github.com/MicrosoftDocs/mslearn-staticwebapp/blob/master/svelte-app?WT.mc_id=aiml-8567-ayyonet)           |
 | **vue-app**     | [Sample Vue app](https://github.com/MicrosoftDocs/mslearn-staticwebapp/blob/master/vue-app?WT.mc_id=aiml-8567-ayyonet)                 |
 
-## Prerequisites
+## Setting up for Development
 
-- A GitHub account
+- Create a GitHub account
+
+You can run this repo by clicking green code button and choosing "open with CodeSpaces" from the dropdown. With CodeSpaces, you can run Visual Studio Code on your browser and code from anywhere. [Sign up for CodeSpaces Beta](https://github.com/features/codespaces?WT.mc_id=aiml-8567-ayyonet) and see the video for details.
+
+[![How to set up remote development with Github Code Spaces and VS Code](http://img.youtube.com/vi/ZWJglERhXLw/0.jpg)](https://youtu.be/ZWJglERhXLw)
+
+OR 
+
+Install below tools in your local development machine(AKA, laptop or desktop)
+
 - [Node.js and Git](https://nodejs.org/)
 - [Visual Studio Code](https://code.visualstudio.com/?WT.mc_id=mslearn_staticwebapp-github-jopapa&WT.mc_id=aiml-8567-ayyonet) installed
 - The [Azure Functions extension](https://marketplace.visualstudio.com/items?itemName=ms-azuretools.vscode-azurefunctions?WT.mc_id=mslearn_staticwebapp-github-jopapa&WT.mc_id=aiml-8567-ayyonet) installed
