@@ -5,8 +5,9 @@ languages:
   - typescript
 products:
   - azure functions
-description: 'Apps that can be used with as a starting point for some MS Learn Modules.'
-urlFragment: 'https://github.com/MicrosoftDocs/mslearn-staticwebapp'
+  - azure cognitive services
+description: 'A Web App that showcase Azure Cognitive Services and Static Web Apps.'
+urlFragment: 'https://github.com/aiadvocates/AIPlayground'
 ---
 
 # AI Playground Web App
@@ -46,11 +47,11 @@ The apps written in the following JavaScript frameworks/libraries:
 
 | folder          | Description                                                                                                                            |
 | --------------- | -------------------------------------------------------------------------------------------------------------------------------------- |
-| **angular-app** | [Sample Angular app](https://github.com/MicrosoftDocs/mslearn-staticwebapp/blob/master/angular-app?WT.mc_id=aiml-8567-ayyonet)         |
-| **api-starter** | [Sample Azure Functions app](https://github.com/MicrosoftDocs/mslearn-staticwebapp/blob/master/api-starter?WT.mc_id=aiml-8567-ayyonet) |
-| **react-app**   | [Sample React app](https://github.com/MicrosoftDocs/mslearn-staticwebapp/blob/master/react-app?WT.mc_id=aiml-8567-ayyonet)             |
-| **svelte-app**  | [Sample Svelte app](https://github.com/MicrosoftDocs/mslearn-staticwebapp/blob/master/svelte-app?WT.mc_id=aiml-8567-ayyonet)           |
-| **vue-app**     | [Sample Vue app](https://github.com/MicrosoftDocs/mslearn-staticwebapp/blob/master/vue-app?WT.mc_id=aiml-8567-ayyonet)                 |
+| **angular-app** | [Sample Angular app](https://github.com/aiadvocates/AIPlayground/tree/main/angular-app?WT.mc_id=aiml-8567-ayyonet)                     |
+| **api**         | [Sample Azure Functions app](https://github.com/aiadvocates/AIPlayground/tree/main/api?WT.mc_id=aiml-8567-ayyonet)                     |
+| **react-app**   | [Sample React app](https://github.com/aiadvocates/AIPlayground/tree/main/react-app?WT.mc_id=aiml-8567-ayyonet)                         |
+| **svelte-app**  | [Sample Svelte app](https://github.com/aiadvocates/AIPlayground/tree/main/svelte-app?WT.mc_id=aiml-8567-ayyonet)                       |
+| **vue-app**     | [Sample Vue app](https://github.com/aiadvocates/AIPlayground/tree/main/vue-app?WT.mc_id=aiml-8567-ayyonet)                             |
 
 ## Setting up for Development
 
