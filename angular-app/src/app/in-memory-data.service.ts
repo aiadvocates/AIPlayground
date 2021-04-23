@@ -76,20 +76,20 @@ function mapCollectionName(name: string): string {
 function getDbData() {
   const products: any[] = [
     {
-      id: 10,
-      name: 'Strawberries',
-      description: '16oz package of fresh organic strawberries',
+      id: 1,
+      name: 'Vision',
+      description: 'Azure Vision APIs',
       quantity: '1',
     },
     {
-      id: 20,
-      name: 'Sliced bread',
+      id: 2,
+      name: 'Speech',
       description: 'Loaf of fresh sliced wheat bread',
       quantity: 1,
     },
     {
-      id: 30,
-      name: 'Apples',
+      id: 3,
+      name: 'Language',
       description: 'Bag of 7 fresh McIntosh apples',
       quantity: 1,
     },

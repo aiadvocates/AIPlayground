@@ -18,6 +18,8 @@
     "@angular/platform-browser": "^11.2.2",
     "@angular/platform-browser-dynamic": "^11.2.2",
     "@angular/router": "^11.2.2",
+    "@azure/cognitiveservices-face": "^4.2.0",
+    "@azure/ms-rest-azure-js": "^2.1.0",
     "@ngrx/data": "^11.0.1",
     "@ngrx/effects": "^11.0.1",
     "@ngrx/entity": "^11.0.1",
@@ -30,6 +32,7 @@
     "minimist": "^1.2.5",
     "rxjs": "~6.6.2",
     "tslib": "^2.0.0",
+    "uuidv4": "^6.2.7",
     "zone.js": "~0.10.3"
   },
   "devDependencies": {

@@ -4,7 +4,9 @@
 
 export const environment = {
   production: false,
-  API: 'api'
+  API: 'api',
+  faceKey: '2bf6c76f488d420d86e17f7715e0307e',
+  faceEndPoint:'https://westus2.api.cognitive.microsoft.com/face/v1.0/detect'
 };
 
 /*
