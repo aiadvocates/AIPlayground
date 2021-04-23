@@ -3,12 +3,12 @@ import { Observable } from 'rxjs';
 import { Product } from '../core';
 import { ProductService } from './product.service';
 
-@Component({
+@Component( {
   selector: 'app-products',
   template: `
     <div class="content-container">
       <app-list-header
-        title="Products"
+        title="APIs"
         (refresh)="getProducts()"
       ></app-list-header>
       <div class="columns is-multiline is-variable">
@@ -18,19 +18,19 @@ import { ProductService } from './product.service';
       </div>
     </div>
   `,
-})
+} )
 export class ProductsComponent implements OnInit {
   products$: Observable<Product[]>;
 
-  constructor(private productService: ProductService) {
+  constructor ( private productService: ProductService ) {
     this.products$ = productService.entities$;
   }
 
-  ngOnInit() {
+  ngOnInit () {
     this.getProducts();
   }
 
-  getProducts() {
+  getProducts () {
     this.productService.getAll();
   }
 }
