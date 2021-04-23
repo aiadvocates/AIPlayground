@@ -1,19 +1,22 @@
 import { Component } from '@angular/core';
 
-@Component({
+@Component( {
   selector: 'app-nav',
   template: `
     <nav class="menu">
-      <p class="menu-label">Menu</p>
+      <p class="menu-label">Azure Cognitive Services</p>
       <ul class="menu-list">
         <a routerLink="/products" routerLinkActive="router-link-active">
-          <span>Products</span>
+          <span>Cognitive Services</span>
         </a>
+        <!-- <a routerLink="/speech" routerLinkActive="router-link-active">
+          <span>Speech</span>
+        </a> -->
         <a routerLink="/about" routerLinkActive="router-link-active">
           <span>About</span>
         </a>
       </ul>
     </nav>
   `,
-})
-export class NavComponent {}
+} )
+export class NavComponent { }

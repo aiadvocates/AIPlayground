@@ -1,6 +1,6 @@
 import { Component } from '@angular/core';
 
-@Component({
+@Component( {
   selector: 'app-header-bar-brand',
   template: `
     <div class="navbar-brand">
@@ -13,11 +13,13 @@ import { Component } from '@angular/core';
         <i class="fab js-logo fa-angular fa-2x" aria-hidden="true"></i>
       </a>
       <a class="navbar-item nav-home" router-link="/">
-        <span class="brand-first">MY</span>
-        <span class="brand-second">SHOPPING</span>
-        <span class="brand-third">LIST</span>
+        <span class="brand-first">
+          <a href="https://angular.io/"
+          target="_blank"
+          rel="noopener noreferrer">AI Playground</a>
+        </span>
       </a>
     </div>
   `,
-})
-export class HeaderBarBrandComponent {}
+} )
+export class HeaderBarBrandComponent { }

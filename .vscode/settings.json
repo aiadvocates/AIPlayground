@@ -6,5 +6,26 @@
   "debug.internalConsoleOptions": "neverOpen",
   "azureFunctions.preDeployTask": "npm prune",
   "appService.defaultWebAppToDeploy": "/subscriptions/7413cf32-781e-47ca-8cb7-e4d30cc2f7cf/resourceGroups/VanessaLearnsML/providers/Microsoft.Web/sites/VanessaWebApp",
-  "appService.deploySubpath": "."
+  "appService.deploySubpath": ".",
+  "workbench.colorCustomizations": {
+    "[Winter is Coming (Dark Blue)]": {
+      "editorIndentGuide.background": "#91ff00",
+      "debugToolBar.background": "#ff00bf",
+      "tab.lastPinnedBorder": "#fbff00",
+      "tab.activeBackground": "#0084ff"
+    },
+    "activityBar.activeBackground": "#3399ff",
+    "activityBar.activeBorder": "#bf0060",
+    "activityBar.background": "#3399ff",
+    "activityBar.foreground": "#15202b",
+    "activityBar.inactiveForeground": "#15202b99",
+    "activityBarBadge.background": "#bf0060",
+    "activityBarBadge.foreground": "#e7e7e7",
+    "statusBarItem.hoverBackground": "#3399ff",
+    "titleBar.activeBackground": "#007fff",
+    "titleBar.activeForeground": "#e7e7e7",
+    "titleBar.inactiveBackground": "#007fff99",
+    "titleBar.inactiveForeground": "#e7e7e799"
+  },
+  "peacock.color": "#007fff"
 }
