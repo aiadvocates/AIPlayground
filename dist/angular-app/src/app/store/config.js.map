@@ -1,1 +1,0 @@
-{"version":3,"file":"config.js","sourceRoot":"","sources":["../../../../../angular-app/src/app/store/config.ts"],"names":[],"mappings":";;;AACA,kEAA+D;AAE/D,MAAM,IAAI,GAAG,yBAAW,CAAC,GAAG,IAAI,KAAK,CAAC;AAEzB,QAAA,wBAAwB,GAA6B;IAChE,IAAI;IAEJ,sBAAsB,EAAE;QACtB,OAAO,EAAE;YACP,yDAAyD;YACzD,iBAAiB,EAAE,GAAG,IAAI,YAAY;YACtC,qBAAqB,EAAE,GAAG,IAAI,YAAY;SAC3C;KACF;CACF,CAAC"}
