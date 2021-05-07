@@ -9,23 +9,13 @@ import { Observable, of } from 'rxjs';
   providedIn: 'root'
 })
 export class CognitiveService {
-  // options: {
-  //   headers?: HttpHeaders | { [header: string]: string | string[]; },
-  //   observe?: 'body' | 'events' | 'response',
-  //   params?: HttpParams | { [param: string]: string | string[]; },
-  //   reportProgress?: boolean,
-  //   responseType?: 'arraybuffer' | 'blob' | 'json' | 'text',
-  //   withCredentials?: boolean,
-  // };
+
 
   constructor(private http: HttpClient) { }
 
   faceKey = environment.faceKey;
   faceEndPoint = "https://ai-blog-face.cognitiveservices.azure.com/"; //environment.faceEndPoint;
 
-  callbackFunc = () => {
-
-  }
 
   analyzeImage = () => {
     console.log('running');
