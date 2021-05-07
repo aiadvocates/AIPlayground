@@ -14,22 +14,26 @@ import {
   InMemoryDbService,
 } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
+import { CognitiveService } from './services/cognitive.service';
 
-@NgModule({
-  declarations: [AppComponent, AboutComponent, declarations],
+@NgModule( {
+  declarations: [ AppComponent, AboutComponent, declarations ],
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot(routes),
+    RouterModule.forRoot( routes ),
     AppStoreModule,
     externalModules,
-    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
+    HttpClientInMemoryWebApiModule.forRoot( InMemoryDataService, {
       dataEncapsulation: false,
       delay: 300,
       passThruUnknownUrl: true,
-    }),
+    } ),
   ],
-  providers: [{ provide: InMemoryDataService, useExisting: InMemoryDbService }],
-  bootstrap: [AppComponent],
-})
-export class AppModule {}
+  providers: [
+    { provide: InMemoryDataService, useExisting: InMemoryDbService },
+    { provide: CognitiveService, useExisting: CognitiveService }
+  ],
+  bootstrap: [ AppComponent ],
+} )
+export class AppModule { }
