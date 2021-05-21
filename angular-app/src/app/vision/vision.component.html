@@ -3,28 +3,11 @@
             <div class="name">Vision</div>
             <div class="description">Azure Vision API</div>
             <div>
-                <div style="padding-bottom: 40px;" *ngIf="imageRawString !== null">
-                    <div class="object-marker" *ngFor="let objectData of objects" [ngStyle]="{
-                        'margin-left.px': objectData.rectangle.x / image.ratio,
-                        'margin-top.px': objectData.rectangle.y / image.ratio,
-                        'width.px': objectData.rectangle.w / image.ratio,
-                        'height.px': objectData.rectangle.h / image.ratio
-                        }">
-                        <label style="background-color: red;">{{ objectData.object }}</label>
-                    </div>
-                    <img src="{{ imageRawString }}" [ngStyle]="{'width.px': image.fixedWidth}" />
-                </div>
-                <label for="url">Enter an https:// URL:</label>
-                <input type="url" name="url" id="url"
-                    placeholder="https://assets.vogue.com/photos/5f346ee7f5c0a7f18f953a7d/1:1/w_1650,h_1650,c_limit/GettyImages-1228017856.jpg"
-                    (change)="readFile($event.target)" #imageUrl>
 
-                <button *ngIf="!isAnalysing" class="upload-btn" (click)="analyze($event.target)">Analyze</button>
-                <!-- <input type="file" style="display: none;" accept="image/*" (change)="readFile($event.target)"
-                    #uploadFile>
+                <label for="url">Enter an https:// image URL:</label>
+                <input type="url" name="url" id="url" placeholder="jpeg, png image url"
+                    (change)="analyze($event.target)" #imageUrl>
 
-                <button *ngIf="!isAnalysing" class="upload-btn" (click)="openImageBrowseDialog()">Select an
-                    Image</button> -->
                 <h2 *ngIf="isAnalysing">Analysing.... Please Wait!</h2>
                 <p></p>
             </div>

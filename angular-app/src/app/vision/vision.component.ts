@@ -21,36 +21,11 @@ export class VisionComponent implements OnInit {
 
   constructor (private http: HttpClient) { }
 
-  ngOnInit(): void {
-  }
-  openImageBrowseDialog() {
-    this.uploadFile.nativeElement.click();
-  }
+  ngOnInit(): void { }
 
-
-  readFile(input) {
-    console.log('input is ', input);
-    // if (input.files.length === 0)
-    // {
-    //   return;
-    // }
-
+  analyze(imageUrl) {
+    console.log("analyzing", imageUrl);
     this.isAnalysing = true;
-    this.objects = [];
-
-    const file: File = input.files[0];
-    const reader = new FileReader();
-
-    reader.addEventListener('load', (event: any) => {
-      this.imageRawString = event.target.result;
-    });
-
-    reader.readAsDataURL(file);
-    this.analyze(file);
-
-  }
-  analyze(file) {
-    console.log("analyzing");
 
     let httpOptions = {
       headers: new HttpHeaders({
@@ -69,17 +44,11 @@ export class VisionComponent implements OnInit {
         }
       })
     };
-
-
     const body = {
       'url': 'https://assets.vogue.com/photos/5f346ee7f5c0a7f18f953a7d/1:1/w_1650,h_1650,c_limit/GettyImages-1228017856.jpg'
-
-      // "url": "https://static.independent.co.uk/s3fs-public/thumbnails/image/2013/01/24/19/prince-philip-gt.jpg?width=1200&auto=webp&quality=75"
     };
     this.http.post(environment["faceEndPoint"], body, httpOptions).subscribe(res => {
       console.log('response is ', res);
-      // this.image.ratio = res['metadata']['width'] / this.image.fixedWidth;
-      // this.objects = res['objects'];
       this.isAnalysing = false;
     });
   }
