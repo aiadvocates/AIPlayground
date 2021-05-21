@@ -1,0 +1,16 @@
+    <div class="card-content">
+        <div class="content">
+            <div class="name">Vision</div>
+            <div class="description">Azure Vision API</div>
+            <div>
+                <!-- <input type="file" style="display: none;" accept="image/*" (change)="readFile($event.target)"
+                    #uploadFile>
+                <button *ngIf="!isAnalysing" class="upload-btn" (click)="analyze()">Analyze</button> -->
+                <input type="file" style="display: none;" accept="image/*" (change)="readFile($event.target)"
+                    #uploadFile>
+                <button *ngIf="!isAnalysing" class="upload-btn" (click)="openImageBrowseDialog()">Select an
+                    Image</button>
+                <h2 *ngIf="isAnalysing">Analysing.... Please Wait!</h2>
+            </div>
+        </div>
+    </div>

@@ -9,7 +9,7 @@ import { Component, OnInit, Input } from '@angular/core';
         <div class="description">{{ description }}</div>
         <div>
               <!-- <input type="file" style="display: none;" accept="image/*" (change)="readFile($event.target)" #uploadFile> -->
-              <button *ngIf="!isAnalysing" class="upload-btn" (click)="analyze()">Analyze</button>
+              <!-- <button *ngIf="!isAnalysing" class="upload-btn">Analyze</button> -->
               
               <h2 *ngIf="isAnalysing">Analysing.... Please Wait!</h2>
         </div>

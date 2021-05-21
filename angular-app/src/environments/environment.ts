@@ -6,7 +6,8 @@ export const environment = {
   production: false,
   // key: process.env.
   API: 'api',
-  faceKey: ''
+  faceKey: '',
+  visionKey: ''
 };
 
 /*
