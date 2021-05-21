@@ -66,12 +66,9 @@ export class VisionComponent implements OnInit {
           'returnRecognitionModel': 'false',
           'detectionModel': 'detection_03',
           'faceIdTimeToLive': '86400'
-
         }
       })
     };
-
-
 
 
     const body = {

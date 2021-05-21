@@ -21,12 +21,12 @@ export class CognitiveService {
     const httpOptions = {
       headers: new HttpHeaders({
         'Content-Type': 'application/json',
-        // 'Ocp-Apim-Subscription-Key': environment.visionKey
+        'Ocp-Apim-Subscription-Key': environment.visionKey
       }),
       returnFaceLandmarks: true
     };
-    const url =
-      "https://pbs.twimg.com/profile_images/3354326900/3a5168f2b45c07d0965098be1a4e3007.jpeg";
+    const url = environment.visionEndPoint;
+    // "https://pbs.twimg.com/profile_images/3354326900/3a5168f2b45c07d0965098be1a4e3007.jpeg";
 
     const body = {
       "url": "https://a57.foxnews.com/static.foxnews.com/foxnews.com/content/uploads/2019/01/931/524/Prince-Philip-AP.jpg?ve=1&tl=1"
@@ -34,8 +34,6 @@ export class CognitiveService {
     this.http.post(url, body, httpOptions)
       .pipe(
         catchError(this.handleError())
-
-        //catchError(this.handleError())
       );
 
   };
@@ -49,9 +47,6 @@ export class CognitiveService {
       const message = (error.error instanceof ErrorEvent) ?
         error.error.message :
         `server returned code ${ error.status } with body "${ error.error }"`;
-
-      // TODO: better job of transforming error for user consumption
-      // this.messageService.add(`${serviceName}: ${operation} failed: ${message}`);
 
       // Let the app keep running by returning a safe result.
       return of(result);

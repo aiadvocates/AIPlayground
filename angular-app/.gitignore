@@ -4,6 +4,7 @@
 /dist
 /tmp
 /out-tsc
+D:\CognitiveServices\AIShow\AIPlayground\angular-app\src\environments\environment.dev.ts
 
 # dependencies
 /node_modules
@@ -22,8 +23,9 @@ node_modules
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
-!.vscode/launch.json
+.vscode/launch.json
 !.vscode/extensions.json
+/src/environments
 
 # misc
 /.sass-cache
@@ -34,6 +36,7 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+src/
 .env
 
 # System Files
