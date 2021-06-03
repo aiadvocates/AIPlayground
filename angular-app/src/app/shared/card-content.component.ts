@@ -25,7 +25,5 @@ export class CardContentComponent implements OnInit {
   public isAnalysing = false;
   ngOnInit () { }
 
-  readFile () {
-
-  }
+  readFile () {}
 }

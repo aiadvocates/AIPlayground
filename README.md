@@ -21,7 +21,7 @@ Join us at [AI Show Live: AI Playground]() edition on every other Friday to buil
 - Submit a Github issue to let us know what you want to see build. 
 - Say Hi on Twitter [Ayşegül](https://twitter.com/AysSomething) & [Vanessa](https://twitter.com/vaness_diaz)
 
-[![AI Show Live](http://img.youtube.com/vi/41TWuFLDUVQ/0.jpg)](https://youtu.be/41TWuFLDUVQ)
+[![AI Show Live](http://img.youtube.com/vi/vRNG8BCtTeU/0.jpg)](https://www.youtube.com/playlist?list=PLlrxD0HtieHinivDFATQd5qyjL6ijKHUF)
 
 ## Static Web App
 

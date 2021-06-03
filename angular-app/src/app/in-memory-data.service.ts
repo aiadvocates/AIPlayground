@@ -82,6 +82,12 @@ function getDbData () {
     //   docs: 'https://aka.ms/AzureVisionAPI'
     // },
     {
+      id: 1,
+      name: 'Vision',
+      description: 'Azure Computer Vision APIs',
+      docs: 'https://aka.ms/AzureVisionAPI'
+    },
+    {
       id: 2,
       name: 'Speech',
       description: 'Azure Speech API Samples',
@@ -94,7 +100,7 @@ function getDbData () {
       docs: 'https://aka.ms/AzureLanguage'
     },
     {
-      id: 3,
+      id: 4,
       name: 'Decision',
       description: 'Azure Decision API Samples',
       docs: 'https://aka.ms/AzureDecision'
