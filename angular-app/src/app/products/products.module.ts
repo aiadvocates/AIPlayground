@@ -4,6 +4,7 @@ import { RouterModule, Routes } from '@angular/router';
 import { SharedModule } from '../shared/shared.module';
 import { ProductListComponent } from './product-list.component';
 import { ProductsComponent } from './products.component';
+import { VisionModule } from '../vision/vision.module';
 
 const routes: Routes = [
   {
@@ -12,9 +13,9 @@ const routes: Routes = [
   },
 ];
 
-@NgModule({
-  imports: [CommonModule, RouterModule.forChild(routes), SharedModule],
-  exports: [RouterModule, ProductsComponent],
-  declarations: [ProductsComponent, ProductListComponent],
-})
-export class ProductsModule {}
+@NgModule( {
+  imports: [ CommonModule, RouterModule.forChild( routes ), SharedModule, VisionModule ],
+  exports: [ RouterModule, ProductsComponent ],
+  declarations: [ ProductsComponent, ProductListComponent ],
+} )
+export class ProductsModule { }

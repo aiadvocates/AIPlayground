@@ -75,12 +75,12 @@ function mapCollectionName ( name: string ): string {
  */
 function getDbData () {
   const products: any[] = [
-    {
-      id: 1,
-      name: 'Vision',
-      description: 'Azure Computer Vision APIs',
-      docs: 'https://aka.ms/AzureVisionAPI'
-    },
+    // {
+    //   id: 1,
+    //   name: 'Vision',
+    //   description: 'Azure Computer Vision APIs',
+    //   docs: 'https://aka.ms/AzureVisionAPI'
+    // },
     {
       id: 2,
       name: 'Speech',

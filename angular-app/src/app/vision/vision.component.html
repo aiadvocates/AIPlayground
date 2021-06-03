@@ -1,0 +1,15 @@
+    <div class="card-content">
+        <div class="content">
+            <div class="name">Vision</div>
+            <div class="description">Azure Vision API</div>
+            <div>
+
+                <label for="url">Enter an https:// image URL:</label>
+                <input type="url" name="url" id="url" placeholder="jpeg, png image url"
+                    (change)="analyze($event.target)" #imageUrl>
+
+                <h2 *ngIf="isAnalysing">Analysing.... Please Wait!</h2>
+                <p></p>
+            </div>
+        </div>
+    </div>

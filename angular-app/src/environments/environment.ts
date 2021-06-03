@@ -4,7 +4,10 @@
 
 export const environment = {
   production: false,
-  API: 'api'
+  API: 'api',
+  faceKey: process.env.faceKey,
+  visionKey: process.env.visionKey,
+  visionEndPoint: 'https://westus2.api.cognitive.microsoft.com/vision/v3.0/analyze',
 };
 
 /*
