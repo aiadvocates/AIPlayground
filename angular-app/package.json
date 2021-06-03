@@ -23,6 +23,7 @@
     "@ngrx/entity": "^11.0.1",
     "@ngrx/store": "^11.0.1",
     "@ngrx/store-devtools": "^11.0.1",
+    "@types/dotenv": "^8.2.0",
     "angular-in-memory-web-api": "^0.11.0",
     "bulma": "^0.9.2",
     "core-js": "^3.6.4",
@@ -39,8 +40,9 @@
     "@angular/language-service": "^11.2.2",
     "@types/jasmine": "~3.6.0",
     "@types/jasminewd2": "^2.0.8",
-    "@types/node": "^14.14.31",
+    "@types/node": "^14.17.0",
     "codelyzer": "^6.0.0",
+    "dotenv": "^8.2.0",
     "jasmine-core": "~3.6.0",
     "jasmine-spec-reporter": "~5.0.0",
     "karma": "~6.1.1",
@@ -50,6 +52,7 @@
     "karma-jasmine-html-reporter": "^1.5.0",
     "ts-node": "^8.6.2",
     "tslint": "~6.1.0",
-    "typescript": "^4.1.5"
+    "typescript": "^4.1.5",
+    "yargs": "^13.3.2"
   }
 }
