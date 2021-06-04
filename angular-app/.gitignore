@@ -4,6 +4,7 @@
 /dist
 /tmp
 /out-tsc
+/angular-app/src/environments/
 
 # dependencies
 /node_modules
@@ -22,8 +23,9 @@ node_modules
 .vscode/*
 !.vscode/settings.json
 !.vscode/tasks.json
-!.vscode/launch.json
+.vscode/launch.json
 !.vscode/extensions.json
+/src/environments
 
 # misc
 /.sass-cache
@@ -34,6 +36,10 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
+<<<<<<< HEAD
+=======
+src/
+>>>>>>> Yonet-june4-start
 .env
 
 # System Files

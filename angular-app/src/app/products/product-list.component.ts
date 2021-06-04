@@ -1,13 +1,16 @@
 import { Component, Input, ChangeDetectionStrategy } from '@angular/core';
 import { Product } from '../core';
 
-@Component({
+@Component( {
   selector: 'app-product-list',
   template: `
     <div *ngIf="!products?.length">
       Loading data ...
     </div>
     <ul class="list">
+      <li>
+        <app-vision></app-vision>
+      </li>
       <li
         role="presentation"
         *ngFor="let product of products; trackBy: trackByProduct; let i = index"
@@ -22,11 +25,15 @@ import { Product } from '../core';
     </ul>
   `,
   changeDetection: ChangeDetectionStrategy.OnPush,
-})
+} )
 export class ProductListComponent {
   @Input() products: Product[];
 
-  trackByProduct(index: number, product: Product): number {
+  analyze () {
+    console.log( 'analyzing' );
+  };
+
+  trackByProduct ( index: number, product: Product ): number {
     return product.id;
   }
 }

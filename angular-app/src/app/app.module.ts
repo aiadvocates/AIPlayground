@@ -16,24 +16,26 @@ import {
 import { InMemoryDataService } from './in-memory-data.service';
 import { CognitiveService } from './services/cognitive.service';
 
-@NgModule( {
-  declarations: [ AppComponent, AboutComponent, declarations ],
+import { DecisionComponent } from './decision/decision.component';
+
+@NgModule({
+  declarations: [AppComponent, AboutComponent, declarations, DecisionComponent],
   imports: [
     BrowserModule,
     HttpClientModule,
-    RouterModule.forRoot( routes ),
+    RouterModule.forRoot(routes),
     AppStoreModule,
     externalModules,
-    HttpClientInMemoryWebApiModule.forRoot( InMemoryDataService, {
+    HttpClientInMemoryWebApiModule.forRoot(InMemoryDataService, {
       dataEncapsulation: false,
       delay: 300,
       passThruUnknownUrl: true,
-    } ),
+    }),
   ],
   providers: [
     { provide: InMemoryDataService, useExisting: InMemoryDbService },
     { provide: CognitiveService, useExisting: CognitiveService }
   ],
-  bootstrap: [ AppComponent ],
-} )
+  bootstrap: [AppComponent],
+})
 export class AppModule { }

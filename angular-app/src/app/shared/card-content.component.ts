@@ -1,6 +1,6 @@
 import { Component, OnInit, Input } from '@angular/core';
 
-@Component( {
+@Component({
   selector: 'app-card-content',
   template: `
     <div class="card-content">
@@ -10,22 +10,22 @@ import { Component, OnInit, Input } from '@angular/core';
         <div>
               <!-- <input type="file" style="display: none;" accept="image/*" (change)="readFile($event.target)" #uploadFile> -->
               <button *ngIf="!isAnalysing" class="upload-btn" (click)="analyze()">Analyze</button>
-              
+
               <h2 *ngIf="isAnalysing">Analysing.... Please Wait!</h2>
         </div>
       </div>
     </div>
   `
-} )
+})
 export class CardContentComponent implements OnInit {
   @Input() name;
   @Input() description;
   @Input() analyze;
 
   public isAnalysing = false;
-  ngOnInit () { }
+  ngOnInit() { }
 
-  readFile () {
+  readFile() {
 
   }
 }
