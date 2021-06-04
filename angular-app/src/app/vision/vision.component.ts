@@ -21,7 +21,7 @@ export class VisionComponent implements OnInit {
   ngOnInit(): void { }
 
   analyze(imageUrl) {
-    console.log("analyzing", imageUrl.value);
+
     this.isAnalysing = true;
 
     let httpOptionsFace = {
@@ -59,6 +59,7 @@ export class VisionComponent implements OnInit {
     const body = {
       'url': imageUrl.value || 'https://s.yimg.com/ny/api/res/1.2/yQJVFoNwA.cX2_ODefOYAA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MA--/https://media.zenfs.com/en/who_what_wear_581/daf991a3fae971512759988c1872ce7b'
     };
+    
     //Face API call
     this.http.post(environment["faceEndPoint"], body, httpOptionsFace).subscribe(res => {
       console.log('response is ', res);
@@ -67,8 +68,7 @@ export class VisionComponent implements OnInit {
     // Vision API call
     this.http.post(environment["visionEndPoint"], body, httpOptionsVision).subscribe(res => {
       console.log('vision Response ', res);
+      this.isAnalysing = false;
     });
   }
-
-
 }

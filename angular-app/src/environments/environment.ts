@@ -1,12 +1,14 @@
 // This file can be replaced during build by using the `fileReplacements` array.
 // `ng build --prod` replaces `environment.ts` with `environment.prod.ts`.
 // The list of file replacements can be found in `angular.json`.
-// require( 'dotenv' ).config();
 export const environment = {
   production: false,
-  // key: process.env.
   API: 'api',
-  faceKey: ''
+  cognitiveEndPoint: 'https://ai-blog-cognitive.cognitiveservices.azure.com/',
+  faceEndPoint: 'https://westus2.api.cognitive.microsoft.com/face/v1.0/detect',
+  faceKey: 'process.env.faceKey',
+  visionKey: 'process.env.visionKey',
+  visionEndPoint: 'https://westus2.api.cognitive.microsoft.com/vision/v3.2/analyze',
 };
 
 /*
