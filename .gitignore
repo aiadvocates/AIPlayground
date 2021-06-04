@@ -4,7 +4,6 @@
 ## Get latest from https://github.com/github/gitignore/blob/master/VisualStudio.gitignore
 /angular-app/src/environments
 /dist
-angular-app/src/environments/environment.dev.ts
 .vscode/launch.json
 
 # User-specific files

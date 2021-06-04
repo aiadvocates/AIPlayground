@@ -2,9 +2,6 @@ import { Component, OnInit, ViewChild, ElementRef } from '@angular/core';
 import { HttpClient, HttpHeaders, HttpParams } from '@angular/common/http';
 import { environment } from '../../environments/environment';
 
-import { Observable, throwError } from 'rxjs';
-import { catchError, retry } from 'rxjs/operators';
-
 @Component({
   selector: 'app-vision',
   templateUrl: './vision.component.html',
@@ -24,10 +21,10 @@ export class VisionComponent implements OnInit {
   ngOnInit(): void { }
 
   analyze(imageUrl) {
-    console.log("analyzing", imageUrl);
+    console.log("analyzing", imageUrl.value);
     this.isAnalysing = true;
 
-    let httpOptions = {
+    let httpOptionsFace = {
       headers: new HttpHeaders({
         'Ocp-Apim-Subscription-Key': environment["faceKey"],
         'Content-Type': 'application/json'
@@ -44,12 +41,32 @@ export class VisionComponent implements OnInit {
         }
       })
     };
-    const body = {
-      'url': 'https://assets.vogue.com/photos/5f346ee7f5c0a7f18f953a7d/1:1/w_1650,h_1650,c_limit/GettyImages-1228017856.jpg'
+
+    let httpOptionsVision = {
+      headers: new HttpHeaders({
+        'Ocp-Apim-Subscription-Key': environment["visionKey"],
+        'Content-Type': 'application/json'
+      }),
+      params: new HttpParams({
+        fromObject: {
+          'visualFeatures': 'Description',
+          'language': 'en',
+          'model-version': 'latest',
+          'details': 'Celebrities'
+        }
+      })
     };
-    this.http.post(environment["faceEndPoint"], body, httpOptions).subscribe(res => {
+    const body = {
+      'url': imageUrl.value || 'https://s.yimg.com/ny/api/res/1.2/yQJVFoNwA.cX2_ODefOYAA--/YXBwaWQ9aGlnaGxhbmRlcjt3PTk2MA--/https://media.zenfs.com/en/who_what_wear_581/daf991a3fae971512759988c1872ce7b'
+    };
+    //Face API call
+    this.http.post(environment["faceEndPoint"], body, httpOptionsFace).subscribe(res => {
       console.log('response is ', res);
       this.isAnalysing = false;
+    });
+    // Vision API call
+    this.http.post(environment["visionEndPoint"], body, httpOptionsVision).subscribe(res => {
+      console.log('vision Response ', res);
     });
   }
 

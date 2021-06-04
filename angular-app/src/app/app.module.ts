@@ -15,9 +15,10 @@ import {
 } from 'angular-in-memory-web-api';
 import { InMemoryDataService } from './in-memory-data.service';
 import { CognitiveService } from './services/cognitive.service';
+import { DecisionComponent } from './decision/decision.component';
 
 @NgModule( {
-  declarations: [ AppComponent, AboutComponent, declarations ],
+  declarations: [ AppComponent, AboutComponent, declarations, DecisionComponent ],
   imports: [
     BrowserModule,
     HttpClientModule,
