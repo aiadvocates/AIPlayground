@@ -32,7 +32,8 @@
 		"ms-azuretools.vscode-azurestorage",
 		"ms-vscode.azurecli",
 		"ms-azuretools.vscode-logicapps",
-		"ms-vscode.vscode-node-azure-pack"
+		"ms-vscode.vscode-node-azure-pack",
+		"ms-azuretools.vscode-azurestaticwebapps"
 	],
 
 	// Use 'forwardPorts' to make a list of ports inside the container available locally.
