@@ -4,7 +4,7 @@
 /dist
 /tmp
 /out-tsc
-/angular-app/src/environments/
+
 
 # dependencies
 /node_modules
@@ -36,10 +36,7 @@ npm-debug.log
 yarn-error.log
 testem.log
 /typings
-<<<<<<< HEAD
-=======
-src/
->>>>>>> Yonet-june4-start
+
 .env
 
 # System Files

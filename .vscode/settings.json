@@ -13,19 +13,10 @@
       "debugToolBar.background": "#ff00bf",
       "tab.lastPinnedBorder": "#fbff00",
       "tab.activeBackground": "#0084ff"
-    },
-    "activityBar.activeBackground": "#3399ff",
-    "activityBar.activeBorder": "#bf0060",
-    "activityBar.background": "#3399ff",
-    "activityBar.foreground": "#15202b",
-    "activityBar.inactiveForeground": "#15202b99",
-    "activityBarBadge.background": "#bf0060",
-    "activityBarBadge.foreground": "#e7e7e7",
-    "statusBarItem.hoverBackground": "#3399ff",
-    "titleBar.activeBackground": "#007fff",
-    "titleBar.activeForeground": "#e7e7e7",
-    "titleBar.inactiveBackground": "#007fff99",
-    "titleBar.inactiveForeground": "#e7e7e799"
+    }
   },
-  "peacock.color": "#007fff"
+  "peacock.color": "#007fff",
+  "staticWebApps.appSubpath": "/angular-app",
+  "staticWebApps.apiSubpath": "api",
+  "staticWebApps.outputSubpath": "dist/angular-app"
 }

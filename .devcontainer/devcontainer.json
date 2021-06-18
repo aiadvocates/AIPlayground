@@ -1,14 +1,13 @@
 // For format details, see https://aka.ms/devcontainer.json. For config options, see the README at:
-// https://github.com/microsoft/vscode-dev-containers/tree/v0.162.0/containers/typescript-node
+// https://github.com/microsoft/vscode-dev-containers/tree/v0.177.0/containers/azure-functions-node
 {
-	"name": "Node.js & TypeScript",
+	"name": "Azure Functions & Node.js",
 	"build": {
 		"dockerfile": "Dockerfile",
-		// Update 'VARIANT' to pick a Node version: 10, 12, 14
-		"args": { 
-			"VARIANT": "14"
-		}
+		// Update 'VARIANT' to pick a Node.js version: 10, 12
+		"args": { "VARIANT": "12" }
 	},
+	"forwardPorts": [ 7071 ],
 
 	// Set *default* container specific settings.json values on container create.
 	"settings": { 
@@ -17,29 +16,17 @@
 
 	// Add the IDs of extensions you want installed when the container is created.
 	"extensions": [
-		"dbaeumer.vscode-eslint",
-		"angular.ng-template",
 		"ms-azuretools.vscode-azurefunctions",
-		"johnpapa.angular-essentials",
+		"dbaeumer.vscode-eslint",
 		"ms-vscode.vscode-typescript-next",
-		"stringham.move-ts",
 		"visualstudioexptteam.vscodeintellicode",
-		"ms-azuretools.vscode-docker",
-		"ms-vsliveshare.vsliveshare",
 		"ms-vscode.azure-account",
-		"ms-vscode.vscode-typescript-tslint-plugin",
-		"ms-azuretools.vscode-azureappservice",
-		"ms-azuretools.vscode-azurestorage",
-		"ms-vscode.azurecli",
-		"ms-azuretools.vscode-logicapps",
-		"ms-vscode.vscode-node-azure-pack"
+		"ms-azuretools.vscode-azurestaticwebapps",
+		"angular.ng-template"
 	],
 
-	// Use 'forwardPorts' to make a list of ports inside the container available locally.
-	"forwardPorts": [4200, 3000],
-
 	// Use 'postCreateCommand' to run commands after the container is created.
-	//"postCreateCommand": "yarn install",
+	// "postCreateCommand": "npm install",
 
 	// Comment out connect as root instead. More info: https://aka.ms/vscode-remote/containers/non-root.
 	"remoteUser": "node"

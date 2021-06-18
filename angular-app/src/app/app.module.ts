@@ -16,10 +16,9 @@ import {
 import { InMemoryDataService } from './in-memory-data.service';
 import { CognitiveService } from './services/cognitive.service';
 
-import { DecisionComponent } from './decision/decision.component';
 
 @NgModule({
-  declarations: [AppComponent, AboutComponent, declarations, DecisionComponent],
+  declarations: [AppComponent, AboutComponent, declarations],
   imports: [
     BrowserModule,
     HttpClientModule,
