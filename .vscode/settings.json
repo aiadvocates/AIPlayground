@@ -15,5 +15,8 @@
       "tab.activeBackground": "#0084ff"
     }
   },
-  "peacock.color": "#007fff"
+  "peacock.color": "#007fff",
+  "staticWebApps.appSubpath": "/angular-app",
+  "staticWebApps.apiSubpath": "api",
+  "staticWebApps.outputSubpath": "dist/angular-app"
 }
