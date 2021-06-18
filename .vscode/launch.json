@@ -2,43 +2,11 @@
   "version": "0.2.0",
   "configurations": [
     {
-      "name": "Attach by Process ID",
-      "processId": "${command:PickProcess}",
-      "request": "attach",
-      "skipFiles": [
-        "<node_internals>/**"
-      ],
-      "type": "pwa-node",
-      "env": {
-        "cognitiveKey": "",
-        "faceKey": "",
-        "visionKey": "",
-      },
-      "cwd": "${workspaceFolder}/angular-app",
-      "autoAttachChildProcesses": true,
-      "envFile": "${workspaceFolder}/.env",
-    },
-    {
-      "name": "Attach to Chrome",
-      "port": 9222,
-      "request": "attach",
-      "type": "pwa-chrome",
-      "webRoot": "${workspaceFolder}",
-    },
-  {
-    "name": "Launch Chrome",
-    "request": "launch",
-    "type": "pwa-chrome",
-    "url": "http://localhost:4200",
-    "webRoot": "${workspaceFolder}",
-    },
-    {
       "name": "Attach to Node Functions",
       "type": "node",
       "request": "attach",
       "port": 9229,
-      "preLaunchTask": "func: host start",
-      "envFile": "${workspaceFolder}/.env",
+      "preLaunchTask": "func: host start"
     }
   ]
 }
